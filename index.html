@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+
+
+    <div class="flex items-center justify-center h-[100vh]">
+
+
+        <div class=" w-4/5 md:w-2/4 bg-gray-300 shadow py-6 px-2 rounded-lg">
+            <h1 class=" text-center text-3xl text-primary font-extrabold"> Book List Add Apps</h1>
+
+            <div class="form-control">
+                <label class="label" >
+                  <span class="label-text text-black text-2xl">Title</span>
+                </label>
+                  <input type="text" placeholder="Title Name" class="input input-primary " id="Title"/>
+
+                <label class="label">
+                  <span class="label-text text-black text-2xl">Author</span>
+                </label>
+                  <input type="text" placeholder="Author Name" class="input input-primary "  id="Author"/>
+
+
+                <label class="label">
+                  <span class="label-text text-black text-2xl">Year</span>
+                </label>
+                  <input type="text" placeholder="Year Name" class="input input-primary "  id="Year"/>
+            </div>
+
+            <div class="bg-orange-300 block py-2 text-center rounded-lg my-8">
+                <button type="submit" id="addBtn" class="w-full">Add book</button>
+            </div>
+
+
+
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr class="bg-green-200">
+                        <th class="font-bold text-xl text-black">Title</th>
+                        <th class="font-bold text-xl text-black">Author</th>
+                        <th class="font-bold text-xl text-black">Year</th>
+                    </tr>
+                  </thead>
+                  <tbody id="book-list">
+                  </tbody>
+                </table>
+
+
+
+        </div>
+    </div>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
